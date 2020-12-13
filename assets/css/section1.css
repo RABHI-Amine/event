@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     position : absolute;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/assets/images/hero-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 /*hero content*/
@@ -44,14 +44,28 @@
     color : #fff;
     margin-bottom: 20px;
 }
+.hero-text h1{
+    font-size: 70px;
+    letter-spacing: 3px;
 
+}
+.hero-text h2{
+    font-size: 30px;
+}
+.hero-text p{
+    font-size: 20px;
+}
 /*Links */
 .links{
-    width: 150px;
-    height: 100px;
-    background-color: red;
+    margin-top: 40px;
 }
-
+.btn{
+    text-decoration: none;
+    padding: 15px 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 35px;
+}
 /*timer*/
 .timer{
     color: #333;
@@ -87,12 +101,22 @@ li span {
     .hero-text{
         margin-bottom: 20px;
     }
-
+    .hero-text h1{
+        font-size: 60px;
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
     .wrapper{
         padding : 10px;
-        margin-top: 90px;
+        margin-top: 70px;
+        height: 90vh;
     }
-
+    .btn{
+        background-color: #fff;
+        color: #333;
+        font-size: 30px;
+    }
     .timer{
         width: 400px;
         padding : 0;

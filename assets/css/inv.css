@@ -1,0 +1,22 @@
+.inv-section{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+.inv-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 100px;
+}
+.pic-inv{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+}
