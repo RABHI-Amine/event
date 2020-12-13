@@ -1,11 +1,12 @@
-.inv-section{
-    background-color: #eee;
+.inv-section {
+    background-color: #fec401;
     display: flex;
     justify-content: center;
     align-items: center;
-    position : relative;
+    position: relative;
 }
-.inv-wrapper{
+
+.inv-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,10 +14,77 @@
     height: 100vh;
     padding: 0 100px;
 }
-.pic-inv{
+
+.pic-inv {
     background-color: red;
     display: flex;
     align-items: center;
     height: 400px;
     width: 400px;
+}
+
+.text-inv {
+    height: 300px;
+    width: 400px;
+    background-color: slateblue;
+    padding: 20px;
+}
+
+/************SLIDE-ARROWS*************/
+body .fp-controlArrow {
+    -webkit-user-select: none;
+    /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+    /* mozilla browsers */
+    -khtml-user-select: none;
+    /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+    /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+body .fp-controlArrow.fp-prev {
+    left: 40px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #000 transparent transparent;
+}
+
+body .fp-controlArrow.fp-next {
+    right: 40px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #000;
+}
+
+body #fp-nav {
+    top: 20%;
+}
+
+body .fp-slidesNav {
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+body .inv-section .fp-tableCell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+@media all and (max-width: 800px) {
+    .fp-controlArrow{
+        display: none !important;
+    }
 }
