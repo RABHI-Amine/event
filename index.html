@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,11 @@
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/section1.css">
     <link rel="stylesheet" href="./assets/css/section2.css">
+    <link rel="stylesheet" href="./assets/css/inv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Monsterrat:300" rel="stylesheet">
 </head>
+
 <body>
     <div id="fullpage">
         <div class="section s1">
@@ -20,28 +25,43 @@
                     <div class="hero-text">
                         <h1>Webinar title</h1>
                         <h2>De Jeune Ingénieure à entrepreneur</h2>
-                        <p>Exite-t-il une recette miracle ? &mdash; Orientation conseil et success stories</p>
+                        <p>Existe-t-il une recette miracle ? &mdash; Orientation conseil et success stories</p>
                     </div>
                     <div class="links">
-                        
+                        <a class="btn" href="#">Participez !</a>
                     </div>
                 </div>
-                
+
                 <div class="timer">
                     <div id="countdown">
                         <ul>
-                          <li><span id="days"></span>days</li>
-                          <li><span id="hours"></span>Hours</li>
-                          <li><span id="minutes"></span>Minutes</li>
-                          <li><span id="seconds"></span>Seconds</li>
+                            <li><span id="days"></span>days</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span id="seconds"></span>Seconds</li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="section about"></div>
-        <div class="section about"></div>
+        <div class="section inv-section">
+            <div class="inv-wrapper">
+                <div class="slide">
+                    <div class="pic-inv"></div>
+                    <div class="text-inv"></div>
+                </div>
+                <div class="slide">
+                    <div class="pic-inv"></div>
+                    <div class="text-inv"></div>
+                </div>
+                <div class="slide">
+                    <div class="pic-inv"></div>
+                    <div class="text-inv"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="section about-section">
             <div class="about-wrapper">
                 <div class="image-container">
@@ -49,28 +69,29 @@
                 </div>
                 <div class="about-text">
                     <h2>About the Webinars</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione maxime voluptatum porro impedit qui voluptatibus explicabo exercitationem natus voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione maxime voluptatum porro
+                        impedit qui voluptatibus explicabo exercitationem natus voluptatem.</p>
                 </div>
             </div>
-            </div>
-        <div class="section"></div>
+        </div>
     </div>
-        
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+        crossorigin="anonymous"></script>
     <script>
         new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-    scrollHorizontally: true,
-    navigation : true,
-    scrollingArrows : false,
-});
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            scrollingArrows: false,
+        });
 
-//methods
-fullpage_api.setAllowScrolling(true);
+        //methods
+        fullpage_api.setAllowScrolling(true);
     </script>
     <script src="./assets/js/countdown.js"></script>
 </body>
+
 </html>
