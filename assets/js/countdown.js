@@ -27,7 +27,7 @@
           countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
 
-        headline.innerText = "https://www.google.com";
+        headline.innerText = "INSERT URL HERE";
         countdown.style.display = "none";
         content.style.display = "block";
 

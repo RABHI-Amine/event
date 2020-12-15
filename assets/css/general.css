@@ -17,7 +17,6 @@ h1 {
 }
 @media all and (max-width: 800px) {
   .fp-controlArrow,
-  .fp-slidesNav,
   #fp-nav {
     display: none !important;
   }
