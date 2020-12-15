@@ -4,30 +4,35 @@
     hour = minute * 60,
     day = hour * 24;
 
-  let DDay = "Dec 19, 2020 20:30:00",
+  let DDay = "Dec 27, 2020 20:30:00",
     countDown = new Date(DDay).getTime(),
     x = setInterval(function () {
-
       let now = new Date().getTime(),
         distance = countDown - now;
 
-      document.getElementById("days").innerText = Math.floor(distance / (day)),
-        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      (document.getElementById("days").innerText = Math.floor(distance / day)),
+        (document.getElementById("hours").innerText = Math.floor(
+          (distance % day) / hour
+        )),
+        (document.getElementById("minutes").innerText = Math.floor(
+          (distance % hour) / minute
+        )),
+        (document.getElementById("seconds").innerText = Math.floor(
+          (distance % minute) / second
+        ));
 
-      //do something later when date is reached
+      //TODO: Fix behaviour when said date is reached
       if (distance < 0) {
         let headline = document.getElementById("headline"),
           countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
 
-        headline.innerText = "URL";
+        headline.innerText = "https://www.google.com";
         countdown.style.display = "none";
         content.style.display = "block";
 
         clearInterval(x);
       }
       //seconds
-    }, 0)
-}());
+    }, 0);
+})();

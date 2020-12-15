@@ -22,7 +22,7 @@
 
 #color2 {
   fill: none;
-  opacity: 0.15;
+  opacity: 0.5;
   stroke: #c4c4c4;
   stroke-width: 12;
   stroke-miterlimit: 10;
@@ -34,7 +34,7 @@
 
 #color3 {
   fill: none;
-  opacity: 0.15;
+  opacity: 0.5;
   stroke: #f0a500;
   stroke-width: 12;
   stroke-miterlimit: 10;
@@ -46,7 +46,7 @@
 
 #color1 {
   fill: none;
-  opacity: 0.15;
+  opacity: 0.5;
   stroke: #cf7500;
   stroke-width: 6;
   stroke-miterlimit: 10;
@@ -78,6 +78,7 @@
 
 .about-text {
   position: absolute;
+  display: inline-block;
   left: 30%;
   top: 2%;
   width: 40%;
@@ -92,10 +93,18 @@
   backdrop-filter: blur(10px);
 }
 
+.about-text a {
+  float: right;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+}
+
 @media all and (max-width: 800px) {
-  .about-wrapper {
-    flex-direction: column;
-    justify-content: space-around;
+  .about-section {
+    background-color: #fff;
   }
 
   .about-text {
