@@ -4,8 +4,8 @@
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "Dec 19, 2020 20:30:00",
-    countDown = new Date(birthday).getTime(),
+  let DDay = "Dec 19, 2020 20:30:00",
+    countDown = new Date(DDay).getTime(),
     x = setInterval(function () {
 
       let now = new Date().getTime(),

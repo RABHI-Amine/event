@@ -1,37 +1,95 @@
 .about-section {
-  background-color: #eee;
-  display: flex;
+  background-color: #1a1c20;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative;*/
 }
 
 /*Wrapper */
 .about-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 0 100px;
 }
 
-.image-container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 40%;
+/****?TESTING-BG-ANIMATION************/
+
+#home {
+  clip-path: url(#cache);
+  height: 100vh;
+  width: 100vw;
 }
 
-.image-container img {
-  width: 100%;
+#color2 {
+  fill: none;
+  opacity: 0.15;
+  stroke: #c4c4c4;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#color3 {
+  fill: none;
+  opacity: 0.15;
+  stroke: #f0a500;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#color1 {
+  fill: none;
+  opacity: 0.15;
+  stroke: #cf7500;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
 }
 
 .about-text {
-  height: 100%;
-  width: 60%;
-  background-color: slateblue;
-  padding: 150px 20px;
+  position: absolute;
+  left: 30%;
+  top: 2%;
+  width: 40%;
+  height: 95%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background: inherit;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(240, 165, 0, 1),
+    0 6px 20px 0 rgba(207, 117, 0, 1);
+  backdrop-filter: blur(10px);
 }
 
 @media all and (max-width: 800px) {
@@ -40,20 +98,15 @@
     justify-content: space-around;
   }
 
-  .image-container {
-    display: flex;
-    align-items: center;
-    height: 250px;
-    width: 400px;
-  }
-
-  .image-container img {
-    width: 350px;
-  }
-
   .about-text {
     height: 250px;
     width: 400px;
     background-color: #555;
+  }
+  #home,
+  #color1,
+  #color2,
+  #color3 {
+    display: none;
   }
 }
