@@ -109,13 +109,19 @@
   line-height: 2rem;
 }
 
-.about-text a {
-  float: right;
+.button-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.btn1,
+.btn2 {
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 40px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 20px;
+  margin: 10px 20px;
 }
 
 .about-text .btn-container{
