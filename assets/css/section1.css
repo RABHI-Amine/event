@@ -41,15 +41,17 @@
 }
 
 /*Hero Text */
+.hero-text {
+  width: 60%;
+}
 .hero-text h1,
-h2,
 p {
   color: #fff;
   margin-bottom: 20px;
 }
 
 .hero-text h1 {
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 3px;
 }
 
@@ -63,6 +65,8 @@ p {
 
 /*Links */
 .links {
+  text-align: center;
+  width: 40%;
   margin-top: 40px;
 }
 
@@ -72,14 +76,25 @@ p {
   border: 1px solid #fff;
   color: #fff;
   font-size: 35px;
+  display: inline-block;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
 }
-
+.btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #f0a500;
+  box-shadow: 0px 0px 100px 0px rgba(255, 165, 0, 1);
+  transition: 0.8s ease;
+}
 /*timer*/
 .timer {
   color: #fff;
   text-align: center;
   background: linear-gradient(-45deg, #f0a500, #cf7500, #1a1c20, #000);
   background-size: 400% 400%;
+  border-radius: 10px;
   animation: gradient 15s ease infinite;
 }
 
@@ -112,19 +127,22 @@ li span {
   .hero-content {
     flex-direction: column;
     align-items: center;
+    width: 90%;
     margin-bottom: 60px;
+    margin-top: 100px;
   }
 
   .hero-text {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    width: 90%;
   }
 
   .hero-text h1 {
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .hero-text p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .wrapper {
@@ -132,16 +150,20 @@ li span {
     margin-top: 70px;
     height: 90vh;
   }
-
+  .links {
+    width: 60%;
+    margin: 15px auto;
+  }
   .btn {
     background-color: #fff;
     color: #333;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .timer {
-    width: 400px;
+    width: 85%;
     padding: 0;
+    margin: 50px 0;
   }
 
   .timer li {
