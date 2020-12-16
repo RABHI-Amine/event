@@ -10,7 +10,6 @@
 .about-wrapper {
   width: 100vw;
   height: 100vh;
-  display: ;
 }
 
 /****?TESTING-BG-ANIMATION************/
@@ -59,7 +58,8 @@
   animation-timing-function: ease-in-out;
 }
 
-.about-wrapper hr,br{
+.about-wrapper hr,
+br {
   width: 100%;
 }
 
@@ -101,9 +101,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-} 
+}
 
-.about-text p{
+.about-text p {
   font-size: 1.2rem;
   text-indent: 30px;
   line-height: 2rem;
@@ -120,50 +120,57 @@
   padding: 15px 40px;
   border: 1px solid #fff;
   color: #fff;
+  border-radius: 4px;
   font-size: 20px;
   margin: 10px 20px;
 }
 
-.about-text .btn-container{
+.about-text .btn-container {
   position: absolute;
-  bottom : 20px;
+  bottom: 20px;
 }
-
 
 @media all and (max-width: 800px) {
   .about-section {
     background-color: #fff;
   }
 
-  .about-wrapper{
-    background-color: #1c1e20;
+  .about-wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/y-so-serious.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     position: relative;
   }
 
-  .about-wrapper br{
+  .about-wrapper {
     width: 100%;
+    height: 100%;
   }
-
+  .about-section .btn1,
+  .btn2 {
+    display: none;
+  }
   .about-text {
     position: relative;
     height: 100%;
     width: 100%;
-    /* background-color: #555; */
     top: 0%;
     left: 0%;
-    /* min-width: 450px; */
     box-shadow: none;
-    
+    padding: 20px;
   }
 
   svg {
     display: none;
   }
 
-  p{
-    font-size: 1rem;
+  .about-text p {
+    text-align: justify;
+    font-size: 15px;
   }
 }
