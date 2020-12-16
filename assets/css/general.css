@@ -1,20 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Chivo', sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #fff !important;
+}
 @media all and (max-width: 800px) {
-    .fp-controlArrow ,.fp-slidesNav ,#fp-nav{
-        display: none !important;
-    }
-
+  .fp-controlArrow,
+  #fp-nav {
+    display: none !important;
+  }
 }
