@@ -1,3 +1,9 @@
+/*TODO:Add Social icons on and gradient to bg image on hover*/
+/*TODO:Adjust colours and button animation*/
+/*TODO:Resize cards to fit contents*/
+/*TODO:Work on section responsiveness and mobile design*/
+/*TODO:Cleanup*/
+
 .inv-section {
   background-color: #333;
 }
@@ -91,4 +97,12 @@
 .inv-wrapper .card .face.face2 .content a:hover {
   background: #333;
   color: #fff;
+}
+
+@media all and (max-width: 800px) {
+  .inv-section .inv-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
