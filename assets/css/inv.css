@@ -5,8 +5,10 @@
 /*TODO:Cleanup*/
 
 .inv-section {
-  background-color: #1c1e20;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/Mesa\ de\ trabajo\ 15\ copia\ 2.png);
 }
+
 .inv-wrapper {
   width: 90%;
   position: relative;
@@ -39,12 +41,17 @@
 }
 
 .inv-wrapper .card:hover .face.face1 {
-  background: #ff0057;
+  background-image: linear-gradient(
+      180deg,
+      rgba(240, 165, 0, 0.8183473218388918) 0%,
+      rgba(34, 34, 34, 1) 98%
+    ),
+    url(../images/y-so-serious.png);
   transform: translateY(0);
 }
 
 .inv-wrapper .card .face.face1 .content {
-  opacity: 0.2;
+  opacity: 1;
   transition: 0.5s;
 }
 
@@ -59,7 +66,7 @@
 .inv-wrapper .card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #222;
+  color: #fff;
   text-align: center;
   font-size: 1.5em;
 }
@@ -72,7 +79,7 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 20px 50px rgba(240, 165, 0, 1);
   transform: translateY(-66.66%);
 }
 
@@ -102,32 +109,14 @@
   box-shadow: 0px 0px 100px 0px rgba(255, 165, 0, 1);
   transition: 0.8s ease;
 }
+
 /********ICON AND ICON HOVER ANIMATIONS*********/
 .inv-wrapper .card ion-icon {
   color: #fff;
-  margin: 5px 10px;
+  margin: 0 auto;
   font-size: 20px;
-}
-
-.inv-wrapper .card ion-icon[name="logo-facebook"]:hover {
-  color: #3b5998;
-  transition: color 0.15s;
-}
-
-.inv-wrapper .card ion-icon[name="logo-instagram"]:hover {
-  color: #fff;
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
-
-  border-radius: 6px;
-  transition: background 0.15s;
+  text-decoration: none;
+  text-align: center;
 }
 
 .inv-wrapper .card ion-icon[name="logo-linkedin"]:hover {
@@ -135,20 +124,16 @@
   transition: color 0.15s;
 }
 
-.inv-wrapper .card ion-icon[name="logo-twitter"]:hover {
-  color: #1da1f2;
-  transition: color 0.15s;
-}
-
 .inv-wrapper .card ul {
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 .inv-wrapper .card li {
   list-style: none;
   margin: 0 auto;
 }
+
 /*********MEDIA QUERIES*************/
 @media all and (max-width: 800px) {
   .inv-section .inv-wrapper {

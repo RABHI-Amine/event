@@ -7,7 +7,9 @@
 body {
   font-family: "Chivo", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
 }
