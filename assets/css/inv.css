@@ -5,7 +5,8 @@
 /*TODO:Cleanup*/
 
 .inv-section {
-  background: #111;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/dark_mosaic.png);
 }
 
 .inv-wrapper {
