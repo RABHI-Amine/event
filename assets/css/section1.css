@@ -124,7 +124,7 @@ li span {
 }
 
 @media all and (max-width: 800px) {
-  .s1 {
+  .s1 .fp-tableCell {
     height: 100vh;
   }
   .hero-content {
@@ -164,7 +164,7 @@ li span {
   }
 
   .timer {
-    width: 85%;
+    width: 100%;
     padding: 0;
     margin: 50px 0;
   }
