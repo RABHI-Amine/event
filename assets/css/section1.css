@@ -125,7 +125,7 @@ li span {
 
 @media all and (max-width: 800px) {
   .s1 {
-    height: 100%;
+    min-height: 100%;
     height: calc(var(--vh, 1vh) * 100);
   }
   .s1 .logo {
