@@ -146,11 +146,11 @@
 }
 #mobileCards .card-mobile {
   width: 100%;
-  height: 30%;
+  height: 25%;
   background-color: #333;
   box-shadow: 0px 0px 20px 0px rgba(255, 165, 0, 1);
   padding-right: 3px;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 #mobileCards .card-mobile img {
   float: left;
