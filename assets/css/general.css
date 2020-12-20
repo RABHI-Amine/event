@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+}
 body {
   font-family: "Chivo", sans-serif;
 }
