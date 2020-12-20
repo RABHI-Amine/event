@@ -124,6 +124,10 @@ li span {
 }
 
 @media all and (max-width: 800px) {
+  .s1 {
+    height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .hero-content {
     flex-direction: column;
     align-items: center;
