@@ -13,10 +13,13 @@ function getWidth() {
 }
 function widthTester() {
   var cards = document.getElementById("cards");
+  var cardsMobile = document.getElementById("mobileCards");
   if (getWidth() <= 800) {
     cards.style.display = "none";
+    cardsMobile.style.display = "flex";
   } else {
     cards.style.display = "flex";
+    cardsMobile.style.display = "none";
   }
 }
 widthTester();
