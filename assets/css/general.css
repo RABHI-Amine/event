@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background: #f0a500;
+  color: #0a0a0a;
+}
 html {
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
