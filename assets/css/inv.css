@@ -151,12 +151,17 @@
   box-shadow: 0px 0px 20px 0px rgba(255, 165, 0, 1);
   padding-right: 3px;
   border-radius: 4px;
+  overflow: auto;
 }
 #mobileCards .card-mobile img {
   float: left;
   width: 40%;
   height: 100%;
   margin-right: 5px;
+}
+
+#mobileCards .card-mobile .invText {
+  overflow: hidden;
 }
 #mobileCards .card-mobile p {
   font-size: 0.7rem;
