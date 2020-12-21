@@ -5,23 +5,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ::selection {
   background: #f0a500;
   color: #0a0a0a;
 }
+
 html {
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
 }
+
 body {
   font-family: "Chivo", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
 }
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: #f0a500 !important;
@@ -76,6 +82,7 @@ h1 {
 .hero-text {
   width: 60%;
 }
+
 .hero-text h1,
 p {
   color: #fff;
@@ -113,6 +120,7 @@ p {
   border-radius: 0.12em;
   box-sizing: border-box;
 }
+
 .btn:hover {
   border: 1px solid #fff;
   color: #fff;
@@ -120,6 +128,7 @@ p {
   box-shadow: 0px 0px 100px 0px rgba(255, 165, 0, 1);
   transition: 0.5s ease;
 }
+
 /*timer*/
 .timer {
   color: #fff;
@@ -134,9 +143,11 @@ p {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -225,9 +236,11 @@ br {
   0% {
     opacity: 0.15;
   }
+
   50% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 0.15;
   }
@@ -251,9 +264,11 @@ br {
   align-items: center;
   overflow: auto;
 }
+
 .about-text h2 {
   color: #fff;
 }
+
 .about-text p {
   font-size: 1.2rem;
   text-indent: 30px;
@@ -266,6 +281,7 @@ br {
   text-align: center;
   justify-content: center;
 }
+
 .btn1,
 .btn2 {
   text-decoration: none;
@@ -276,6 +292,7 @@ br {
   font-size: 20px;
   margin: 10px 20px;
 }
+
 .btn1:hover,
 .btn2:hover {
   border: 1px solid #fff;
@@ -284,6 +301,7 @@ br {
   box-shadow: 0px 0px 100px 0px rgba(255, 165, 0, 1);
   transition: 0.8s ease;
 }
+
 .about-text .btn-container {
   position: absolute;
   bottom: 20px;
@@ -303,12 +321,14 @@ br {
   justify-content: space-between;
   margin: 0 auto;
 }
+
 .inv-section h2 {
   color: #fff;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
 }
+
 .inv-wrapper .card {
   position: relative;
   cursor: pointer;
@@ -429,12 +449,14 @@ br {
   list-style: none;
   margin: 0 auto;
 }
+
 /*****MOBILE-VIEW-STYLING********/
 #mobileCards h3 {
   padding-top: 5px;
   color: #fff;
   font-size: 0.8rem;
 }
+
 #mobileCards .card-mobile {
   width: 100%;
   height: 25%;
@@ -444,6 +466,7 @@ br {
   border-radius: 4px;
   overflow: auto;
 }
+
 #mobileCards .card-mobile img {
   float: left;
   width: 40%;
@@ -454,6 +477,7 @@ br {
 #mobileCards .card-mobile .invText {
   overflow: hidden;
 }
+
 #mobileCards .card-mobile p {
   font-size: 0.7rem;
   text-align: justify;
@@ -473,9 +497,11 @@ br {
     min-height: 100%;
     height: calc(var(--vh, 1vh) * 100);
   }
+
   .s1 .logo {
     padding-top: 25px;
   }
+
   .hero-content {
     flex-direction: column;
     align-items: center;
@@ -502,10 +528,12 @@ br {
     margin-top: 70px;
     height: 90vh;
   }
+
   .links {
     width: 60%;
     margin: 15px auto;
   }
+
   .btn {
     background-color: #fff;
     color: #333;
@@ -536,6 +564,7 @@ br {
   p {
     margin-bottom: 5px;
   }
+
   /*******ABOUT-SECTION-QUERIES********/
 
   .about-section {
@@ -558,10 +587,12 @@ br {
     width: 100%;
     height: 100%;
   }
+
   .about-section .btn1,
   .btn2 {
     display: none;
   }
+
   .about-text {
     position: relative;
     height: 100%;
@@ -571,9 +602,11 @@ br {
     box-shadow: none;
     padding: 20px;
   }
+
   .about-text h2 {
     font-weight: 400;
   }
+
   svg {
     display: none;
   }
