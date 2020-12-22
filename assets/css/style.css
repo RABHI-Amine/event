@@ -471,6 +471,7 @@ br {
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(240, 165, 0, 1);
   transform: translateY(-66.66%);
+  overflow: auto;
 }
 
 .inv-wrapper .card:hover .face.face2 {
