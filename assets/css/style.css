@@ -128,15 +128,48 @@ p {
   box-shadow: 0px 0px 100px 0px rgba(255, 165, 0, 1);
   transition: 0.5s ease;
 }
+/****FLIP-TIMER****/
+.flip-card {
+  perspective: 1000;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+.timer-back {
+  position: absolute;
+  top: 0%;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  text-align: center;
+  background: linear-gradient(-45deg, #f0a500, #cf7500, #1a1c20, #000);
+  background-size: 400% 400%;
+  border-radius: 10px;
+  animation: gradient 10s ease infinite;
+}
 
 /*timer*/
 .timer {
+  display: flex;
   color: #fff;
   text-align: center;
   background: linear-gradient(-45deg, #f0a500, #cf7500, #1a1c20, #000);
   background-size: 400% 400%;
   border-radius: 10px;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 @keyframes gradient {
@@ -327,6 +360,7 @@ br {
   text-align: center;
   justify-content: center;
   margin: 0 auto;
+  font-size: 3rem;
 }
 
 .inv-wrapper .card {
@@ -343,7 +377,6 @@ br {
 
 .inv-wrapper .card .face.face1 {
   position: relative;
-  background-image: url(../images/);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,13 +384,59 @@ br {
   transform: translateY(100px);
 }
 
-.inv-wrapper .card:hover .face.face1 {
+.inv-wrapper .card .face.face1.inv1 {
+  background-image: url(../images/inv1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inv-wrapper .card .face.face1.inv2 {
+  background-image: url(../images/inv2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inv-wrapper .card .face.face1.inv3 {
+  background-image: url(../images/inv3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inv-wrapper .card:hover .face.face1.inv1 {
   background-image: linear-gradient(
       180deg,
       rgba(240, 165, 0, 0.8183473218388918) 0%,
       rgba(34, 34, 34, 1) 98%
     ),
-    url(../images/);
+    url(../images/inv1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(0);
+}
+.inv-wrapper .card:hover .face.face1.inv2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(240, 165, 0, 0.8183473218388918) 0%,
+      rgba(34, 34, 34, 1) 98%
+    ),
+    url(../images/inv2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(0);
+}
+.inv-wrapper .card:hover .face.face1.inv3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(240, 165, 0, 0.8183473218388918) 0%,
+      rgba(34, 34, 34, 1) 98%
+    ),
+    url(../images/inv3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transform: translateY(0);
 }
 
