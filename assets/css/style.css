@@ -621,7 +621,11 @@ br {
     padding: 0;
     margin: 50px 0;
   }
-
+  .timer-back,
+  .flip-card-inner {
+    height: auto;
+    width: 100%;
+  }
   .timer li {
     display: inline-block;
     font-size: 1rem;
