@@ -558,7 +558,7 @@ br {
   vertical-align: top !important;
 }
 #mobileCards .card-mobile .card {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   top: 3%;
@@ -567,6 +567,7 @@ br {
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 20px 0px rgba(255, 165, 0, 1);
   border-radius: 4px;
+  overflow: auto;
 }
 
 #mobileCards .card-mobile .invTextContainer {
