@@ -719,9 +719,9 @@ br {
   ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
   }
-  ::-webkit-scrollbar-thumb:active {
-    background: #f0a500S;
-  }
+  /* ::-webkit-scrollbar-thumb:active {
+    background-color: ;
+  } */
   
   ::-webkit-scrollbar-track {
     background: #666666;
@@ -737,4 +737,3 @@ br {
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
-  </style>
