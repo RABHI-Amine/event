@@ -627,7 +627,7 @@ br {
   }
   .timer li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style-type: none;
     padding: 0.7em;
     text-transform: uppercase;
@@ -692,7 +692,7 @@ br {
 
   .about-text p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 0.8rem;
   }
 
   /********INV-SECTION-QUERIES********/
