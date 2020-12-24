@@ -14,6 +14,7 @@
 html {
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
 }
 
 body {
@@ -145,9 +146,7 @@ p {
   transform-style: preserve-3d;
   animation: rotation 5s infinite;
 }
-.fflip-card:hover .flip-card-inner {
-  transform: rotateX(180deg);
-}
+
 .timer-back {
   position: absolute;
   top: 0%;
@@ -200,7 +199,7 @@ p {
 
 .timer li {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.8rem;
   list-style-type: none;
   padding: 1em 2rem;
   text-transform: uppercase;
@@ -208,7 +207,7 @@ p {
 
 li span {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /*******ABOUT-SECTION*********/
@@ -699,41 +698,58 @@ br {
   /********INV-SECTION-QUERIES********/
 }
 
-  /********SCROLL BAR STYLING********/
+/********SCROLL BAR STYLING********/
 
-  ::-webkit-scrollbar {
-    width: 11px;
-    height: 11px;
-  }
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
 
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #e1e1e1;
-    border: 0px none #ffffff;
-    border-radius: 37px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
-  }
-  /* ::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 37px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+/* ::-webkit-scrollbar-thumb:active {
     background-color: ;
   } */
-  
-  ::-webkit-scrollbar-track {
-    background: #666666;
-    border: 0px none #ffffff;
-    border-radius: 43px;
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 43px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/****SMALL-PHONES-QUERIES****/
+
+@media all and (max-height: 650px) {
+  .timer-back h1 {
+    font-size: 1.3rem;
   }
-  ::-webkit-scrollbar-track:hover {
-    background: #666666;
+  .timer li {
+    font-size: 0.8rem;
   }
-  ::-webkit-scrollbar-track:active {
-    background: #333333;
+  .about-text p {
+    font-size: 0.7rem;
   }
-  ::-webkit-scrollbar-corner {
-    background: transparent;
+  .inv-section #mobileCards .card-mobile p {
+    font-size: 0.7rem;
   }
+}
