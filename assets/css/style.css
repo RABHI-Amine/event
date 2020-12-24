@@ -14,7 +14,6 @@
 html {
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
-  overflow: hidden;
 }
 
 body {
@@ -747,7 +746,8 @@ br {
     font-size: 0.8rem;
   }
   .about-text p {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
+    line-height: 1.6rem;
   }
   .inv-section #mobileCards .card-mobile p {
     font-size: 0.7rem;
